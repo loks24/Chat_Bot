@@ -1,0 +1,59 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day"],
+         "responses": ["Hello, thanks for asking", "Good to see you again", "Hi there, how can I help?"],
+         "context": [""]
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+         "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+         "context": [""]
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure"],
+         "context": [""]
+        },
+        {"tag": "noanswer",
+         "patterns": [],
+         "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
+         "context": [""]
+        },
+        {"tag": "case_id_search",
+         "patterns": ["CASEID : "],
+         "responses": ["Navigating to Exception Detail Page"],
+         "context": [""]
+        },
+        {"tag": "Exception_Search",
+         "patterns": ["Need Data for Exception", "Open Exception of CaseID","EP Detail",
+           "Please Provide Exception Detail","Exception Detail","Case Detail", "Case", "Case Id", "Show Details for CaseID","Need Details for CaseID"],
+         "responses": ["Enter the case ID in the format 'CASEID : XXXXXXXXXXXXXX'"],
+         "context": [""]
+        },
+        {"tag": "Stop_Payment",
+         "patterns": ["What are the available types of Stop Payment", "Stop Payment Types", "Show Types of Stop Payment", "I want to know the types of stoppayment", "Stop Payment" ],
+         "responses": ["Stop Payment have 3 types: OTSP,NESP,RESP"],
+         "context": [""]
+        },
+        {"tag": "Transaction_Research",
+         "patterns": ["I want to search for Transaction", "Show Transaction Detail of card number", "Participant Details", "TR Details of cardnumber", "TR Details","Card number"],
+         "responses": ["Yet to be Developed"],
+         "context": [""]
+        },
+        {"tag": "Fraud_Search",
+         "patterns": ["Raise a Fraud for the transaction","Show the Fraud Details","Fraud Details","Raise Group Fraud","Fraud"],
+         "responses": ["Yet to be developed"],
+         "context": [""]
+        },
+        {"tag": "search_exception_by_partID",
+         "patterns": [],
+         "responses": ["Yet to be Developed"],
+         "context": [""]
+        },
+        {"tag": "unnknown_pattern",
+         "patterns": ["@#$#@%@","agssddafhz","67%#gsdd"],
+         "responses": ["Ask a Valid Question !! Please dont blabberr you idiot !!"],
+         "context": []
+        }
+   ]
+}
